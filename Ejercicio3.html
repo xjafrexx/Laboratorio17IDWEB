@@ -1,10 +1,34 @@
-function provocarError() {
-    var resultado = document.getElementById('resultado');
-    
-    try {
-        var x = variableNoDefinida + 10;
-    } catch (error) {
-        resultado.style.display = 'block';
-        resultado.innerHTML = 'Error: ' + error.message;
-    }
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid black;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 3</h1>
+    <button onclick="provocarError()">Provocar Error</button>
+    <div id="resultado"></div>
+
+    <script src="ejercicio3.js"></script>
+</body>
+</html>

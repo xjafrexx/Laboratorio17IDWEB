@@ -3,63 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8 - Propagacion de Errores</title>
+    <title>Ejercicio 8</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            border-bottom: 3px solid #17a2b8;
-            padding-bottom: 10px;
         }
         button {
-            background-color: #17a2b8;
-            color: white;
-            border: none;
             padding: 10px 20px;
             font-size: 16px;
-            border-radius: 5px;
             cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #138496;
         }
         #resultado {
             margin-top: 20px;
             padding: 15px;
-            background-color: #d1ecf1;
-            border: 1px solid #bee5eb;
-            border-radius: 5px;
-            color: #0c5460;
+            border: 1px solid black;
             display: none;
         }
         .mensaje {
             padding: 8px;
             margin: 5px 0;
-            background-color: white;
-            border-left: 4px solid #17a2b8;
+            border: 1px solid gray;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ejercicio 8: Propagacion de Errores</h1>
-        <p>El error se captura en multiples niveles</p>
-        <button onclick="iniciar()">Iniciar Propagacion</button>
-        <div id="resultado"></div>
-    </div>
+    <h1>Ejercicio 8</h1>
+    <button onclick="iniciar()">Iniciar</button>
+    <div id="resultado"></div>
 
     <script src="ejercicio8.js"></script>
 </body>

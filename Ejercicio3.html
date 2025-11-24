@@ -1,0 +1,10 @@
+function provocarError() {
+    var resultado = document.getElementById('resultado');
+    
+    try {
+        var x = variableNoDefinida + 10;
+    } catch (error) {
+        resultado.style.display = 'block';
+        resultado.innerHTML = 'Error: ' + error.message;
+    }
+}
